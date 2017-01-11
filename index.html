@@ -173,7 +173,7 @@
             window.addEventListener("scroll", function() {
                 var slide = document.querySelectorAll(".slideanim");
                 for (var i = 0, a = slide.length; i < a; i++) {
-                    if (slide[i].offsetTop < document.documentElement.scrollTop + 500) {
+                    if (slide[i].offsetTop < pageYOffset + 500) {
                         slide[i].classList.add("slide");
                     }
                 }
