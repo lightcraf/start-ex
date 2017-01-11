@@ -40,14 +40,17 @@ a {
     [class*="col-"] {
         width: 100%;
     }
+    .section-2 > .col-5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
     .arrow::after {
         display: none;
     }
     .arrow::before {
         background-image: none !important;
-    }
-    .section-2 > .col-5 {
-        display: none;
     }
 }
 
@@ -222,6 +225,10 @@ a {
     margin-top: 32px;
 }
 
+.clients-logos {
+    padding-bottom: 20px;
+}
+
 .clients-logos img {
     padding: 90px 50px 0px 50px;
 }
@@ -250,20 +257,21 @@ a {
     padding-top: 78px;
 }
 
+.try-now p.color-red {
+    margin-bottom: 6px;
+}
+
 .try-now .col-12 h1 {
     color: white;
+    margin-top: 0px;
 }
 
-.try-now-form {
-    margin-top: 88px;
+.try-now form {
+    padding-top: 75px;
 }
 
-.try-now-form form {
-    margin: 0px 15px 10px 15px;
-}
-
-.try-now-form form input {
-    width: 100%;
+.try-now form input, .try-now form button {
+    width: 264px;
     background-color: #474d78;
     border-radius: 2px;
     height: 50px;
@@ -273,46 +281,43 @@ a {
     font-size: 14px;
     font-weight: 900;
     font-family: 'Exo', sans-serif;
+    margin: 0px 13px 10px 13px;
 }
 
-#try-now-input-submit {
+#try-now-submit {
     background-color: #ff6d6d;
     padding-left: 0px;
     position: relative;
-    top: -56px;
     cursor: pointer;
 }
 
-#try-now-input-submit:hover {
+#try-now-submit:hover {
     background-color: #f54646;
 }
 
-.arrow {
-    height: 0px;
-}
-
 .arrow::before {
-    content: '';
+    content: ' ';
     background-image: url("images/arrow.png");
-    height: 56px;
+    height: 40px;
     display: block;
     background-repeat: no-repeat;
-    position: relative;
-    top: -60px;
+    position: absolute;
+    top: -57px;
+    width: 18px;
 }
 
 .arrow::after {
     content: '30 days trial for all';
-    position: relative;
-    top: -172px;
-    right: 30px;
+    position: absolute;
+    top: -60px;
+    right: 107px;
     color: white;
     font-weight: 900;
 }
 
 .terms {
     color: #717171;
-    padding-top: 64px;
+    padding-top: 20px;
 }
 
 .terms a {
@@ -354,6 +359,10 @@ a {
     color: #717171;
 }
 
+.icons {
+    min-width: 270px;
+}
+
 .about, .icons {
     padding: 85px 15px 0px 15px;
 }
@@ -370,6 +379,9 @@ a {
 .about ul li {
     padding-bottom: 8px;
     font-weight: 900;
+}
+
+.about ul li a {
     color: #717171;
 }
 
@@ -388,7 +400,7 @@ a {
 .icons ul li img {
     display: inline-block;
     float: left;
-    margin: 0px 13px;
+    margin: 0px 13px 10px 13px;
 }
 
 .icons ul {
